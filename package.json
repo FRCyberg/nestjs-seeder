@@ -8,7 +8,7 @@
     "lib": "lib"
   },
   "scripts": {
-    "build": "tsc",
+    "build": "tsc --project ./tsconfig.json",
     "postinstall": "npm run build",
     "prebuild": "rimraf dist",
     "dev": "npm run prebuild && tsc -w"
